@@ -40,7 +40,7 @@ export const ProductPageTemplate = ({
             </div>
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <Features gridItems={intro.blurbs} /> 
+                <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-7">
                     <h3 className="has-text-weight-semibold is-size-3">
@@ -200,26 +200,6 @@ export const productPageQuery = graphql`
                 gatsbyImageData(quality: 72, layout: FULL_WIDTH)
               }
             }
-          }
-        }
-        testimonials {
-          author
-          quote
-        }
-
-        full_image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
           }
         }
       }
